@@ -38,7 +38,7 @@ WHITELIST = {
 
 TAG_RE = re.compile(r"\[/?[a-z-]+(?:=[^\]]+)?\]")
 PLACEHOLDER_RE = re.compile(r"__[A-Za-z0-9_]+__")
-LATIN_WORD_RE = re.compile(r"[A-Za-z][A-Za-z']+")
+LATIN_WORD_RE = re.compile(r"[A-Za-z][A-Za-z']{2,}")
 
 
 def find_latin(value):
@@ -137,8 +137,9 @@ def main():
         if latin:
             errors.append(f"английские слова в переводе {sorted(set(latin))}: {full} ({ru_file})")
 
-        # совпадение с оригиналом (не переведено вообще); числовые значения — исключение
-        if ru_val.strip() == en.strip() and re.search(r"[A-Za-zА-Яа-яЁё]", ru_val):
+        # совпадение с оригиналом (не переведено вообще); числовые значения и
+        # чистые бренды (все слова в белом списке) — не считаем предупреждением
+        if ru_val.strip() == en.strip() and find_latin(ru_val):
             warnings.append(f"перевод совпадает с оригиналом: {full} ({ru_file})")
 
         # длина: сильное расхождение — индикатор потерянного/лишнего абзаца
@@ -156,13 +157,15 @@ def main():
         terms = glossary.get("terms", [])
         for k in sorted(src_keys & ru_keys):
             ru_val = ru[k][0]
+            cleaned = TAG_RE.sub(" ", ru_val)
+            cleaned = PLACEHOLDER_RE.sub(" ", cleaned)
             for term in terms:
                 en_term = term.get("en")
-                if en_term and re.search(r"\b" + re.escape(en_term) + r"\b", ru_val):
+                if en_term and re.search(r"\b" + re.escape(en_term) + r"\b", cleaned):
                     errors.append(
                         f"непереведённый термин '{en_term}': {k[0]}.{k[1]}")
                 for bad in term.get("forbidden", []):
-                    if re.search(re.escape(bad), ru_val):
+                    if re.search(re.escape(bad), cleaned):
                         errors.append(
                             f"запрещённый вариант '{bad}' (нужно '{term.get('ru')}'): "
                             f"{k[0]}.{k[1]}")

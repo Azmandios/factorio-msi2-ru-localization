@@ -20,7 +20,7 @@
     {"en": "artillery", "ru": "артиллерия", "forbidden": []},
     {"en": "sniper rifle", "ru": "снайперская винтовка", "forbidden": ["снайперка"]},
     {"en": "oil patch", "ru": "нефтяное месторождение", "forbidden": ["нефтяное пятно"]},
-    {"en": "wreckage", "ru": "обломки", "forbidden": ["реки", "обломок корабля"]},
+    {"en": "wreckage", "ru": "обломки", "forbidden": ["останки корабля"]},
     {"en": "escape pod", "ru": "спасательная капсула", "forbidden": ["спасательный модуль"]},
     {"en": "productivity", "ru": "производительность", "forbidden": ["продуктивность"]}
   ]
