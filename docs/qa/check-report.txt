@@ -1,0 +1,41 @@
+# Отчёт проверки перевода
+
+[check] coverage=490/490 (100.0%) errors=0 warnings=0
+[check] OK
+
+
+Mining-Space-Industries-II:
+  [Mining-Space-Industries-II  ] 179/179 100.0% ====================
+  [controls                    ]   1/1   100.0% ====================
+  [entity-description          ]   6/6   100.0% ====================
+  [entity-name                 ]  45/45  100.0% ====================
+  [item-description            ]   4/4   100.0% ====================
+  [item-name                   ]   6/6   100.0% ====================
+  [labels                      ]  92/92  100.0% ====================
+  [mod-setting-description     ]  10/10  100.0% ====================
+  [mod-setting-name            ]  13/13  100.0% ====================
+  [technology-description      ]   6/6   100.0% ====================
+  [technology-name             ]  12/12  100.0% ====================
+
+Rocket-Silo-Construction:
+  [RSC                         ]   1/1   100.0% ====================
+  [entity-description          ]   8/8   100.0% ====================
+  [entity-name                 ]   6/6   100.0% ====================
+  [item-description            ]   3/3   100.0% ====================
+  [item-name                   ]   4/4   100.0% ====================
+  [mod-setting-description     ]   2/2   100.0% ====================
+  [mod-setting-name            ]  11/11  100.0% ====================
+  [recipe-name                 ]   9/9   100.0% ====================
+
+factorio-crash-site:
+  [ammo-category-name          ]   1/1   100.0% ====================
+  [entity-description          ]  11/11  100.0% ====================
+  [entity-name                 ]  12/12  100.0% ====================
+  [item-name                   ]   4/4   100.0% ====================
+
+mferrari_lib:
+  [entity-name                 ]  42/42  100.0% ====================
+  [mod-setting-description     ]   1/1   100.0% ====================
+  [mod-setting-name            ]   1/1   100.0% ====================
+
+[report] 490/490 (100.0%)

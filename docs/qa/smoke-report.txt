@@ -1,0 +1,23 @@
+# Smoke-отчёт: применённые строки (factorio --dump-prototype-locale, locale=ru)
+
+Дата: 2026-11-10T21:08:28Z
+
+Проверено, что названия прототипов MSI2 и зависимостей реально стали русскими в дампе:
+
+```
+msi_protomolecule_spawner = Заражённое гнездо протомолекулы
+crash-site-lab-broken    = Повреждённая лаборатория
+msi-smoke-boss-spawner   = Гигантский источник биологического дыма
+msi_container            = Контейнер MSI
+msi_sniper_rifle         = Снайперская винтовка
+railgun                  = Рельсотрон
+computer                 = Компьютер
+msi_protomolecule_scan   = Сканирование протомолекулы
+msi_companion_droid_tech-1 = Улучшение дрона-компаньона MSI 1
+laboratory               = Лаборатория
+msi-difficulty-level     = Уровень сложности
+msi-enemy-hp-multiplier  = Множитель здоровья врагов
+```
+
+Сущности msi_companion_droid / msi-ore-solaz / maf-boss-biter создаются в runtime и
+отсутствуют на data-этапе — их названия берутся из тех же ключей локали.
