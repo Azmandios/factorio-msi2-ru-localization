@@ -163,29 +163,29 @@ https://mods.factorio.com/mod/Mining-Space-Industries-II
 
 ### Фаза 1: Термины, интерфейс, сущности и зависимости
 
-- [ ] **Задача 8. Скелет `locale/ru/`.** Создать файлы `msi-labels.cfg`, `msi-entities.cfg`,
+- [x] **Задача 8. Скелет `locale/ru/`.** Создать файлы `msi-labels.cfg`, `msi-entities.cfg`,
   `msi-items.cfg`, `msi-tech.cfg`, `msi-settings.cfg`, `msi-informatron-menu.cfg`,
   `msi-informatron-pages.cfg`, `msi-informatron-missions.cfg`, `deps-crash-site.cfg`,
   `deps-mferrari-lib.cfg`, `deps-rocket-silo.cfg` с корректными заголовками секций и 2–3 переведёнными
   ключами. Диагностика: `make check` запускается и печатает покрытие > 0 без ошибок парсинга.
 
-- [ ] **Задача 9. Раздел `[labels]` — 92 ключа / 2 790 симв.**
+- [x] **Задача 9. Раздел `[labels]` — 92 ключа / 2 790 симв.**
   Кнопки и подписи GUI, шаблоны сообщений (`new_mission_entry`, `mission_accomplished`, `alert_entity_destroyed`),
   статусы миссий. Файл: `locale/ru/msi-labels.cfg`.
   Диагностика: `make check` — секция `labels` 92/92, теги `[font=heading-2]`, `[color=cyan]`, `__1__` сохранены.
 
-- [ ] **Задача 10. Сущности и предметы MSI2 — 64 ключа / 2 478 симв.**
+- [x] **Задача 10. Сущности и предметы MSI2 — 64 ключа / 2 478 симв.**
   `[entity-name]`, `[entity-description]`, `[item-name]`, `[item-description]`.
   Файлы: `locale/ru/msi-entities.cfg`, `locale/ru/msi-items.cfg`.
   Диагностика: `make check` + `make smoke` показывает русские названия дрона, синтетика, гнёзд протомолекулы.
 
-- [ ] **Задача 11. Технологии, настройки, управление — 42 ключа / 2 272 симв.**
+- [x] **Задача 11. Технологии, настройки, управление — 42 ключа / 2 272 симв.**
   `[technology-name]`, `[technology-description]`, `[mod-setting-name]`, `[mod-setting-description]`,
   `[controls]`. Учесть: `[technology-name] laboratory` переопределяет базовую технологию — переводить как
   «Лаборатория»; числовые описания настроек не переводить.
   Файлы: `locale/ru/msi-tech.cfg`, `locale/ru/msi-settings.cfg`.
 
-- [ ] **Задача 12. Зависимости — 116 ключей / 3 923 симв.**
+- [x] **Задача 12. Зависимости — 116 ключей / 3 923 симв.**
   `factorio-crash-site` (обломки корабля, рельсотрон, компьютер), `mferrari_lib` (боссы, зомби, киборги),
   `Rocket-Silo-Construction` (рецепты и настройки строительства шахты). Ключи `railgun`, `computer`,
   `small-plane` согласовать с официальной русской локализацией base.

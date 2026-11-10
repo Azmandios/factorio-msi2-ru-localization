@@ -1,13 +1,13 @@
 {
   "terms": [
-    {"en": "protomolecule", "ru": "протомолекула", "forbidden": ["протомолекул", "протомолекулa", "прото-молекула"]},
+    {"en": "protomolecule", "ru": "протомолекула", "forbidden": ["протамолекула", "прото-молекула"]},
     {"en": "companion droid", "ru": "дрон-компаньон", "forbidden": ["компаньон-дроид", "дроид-компаньон"]},
     {"en": "worker droid", "ru": "рабочий дрон", "forbidden": ["рабочий дроид", "дроид-рабочий"]},
-    {"en": "science pack", "ru": "научный пакет", "forbidden": ["сайенс", "саенс", "наука-пак"]},
-    {"en": "assembling machine", "ru": "сборочный автомат", "forbidden": ["ассемблер", "сборщик"]},
+    {"en": "science pack", "ru": "исследовательский пакет", "forbidden": ["научный пакет", "сайенс", "саенс", "наука-пак"]},
+    {"en": "assembling machine", "ru": "сборочный автомат", "forbidden": ["ассемблер"]},
     {"en": "rocket silo", "ru": "ракетная шахта", "forbidden": ["ракетный силос"]},
     {"en": "message board", "ru": "доска сообщений", "forbidden": ["доска объявлений"]},
-    {"en": "mission control", "ru": "контроль миссии", "forbidden": ["управление миссией"]},
+    {"en": "mission control", "ru": "контроль миссии", "forbidden": []},
     {"en": "biter", "ru": "кусака", "forbidden": ["байтер", "кусачка"]},
     {"en": "spitter", "ru": "плевака", "forbidden": ["спиттер", "плеватель"]},
     {"en": "nest", "ru": "гнездо", "forbidden": []},

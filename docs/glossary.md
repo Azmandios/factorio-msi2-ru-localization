@@ -23,7 +23,7 @@
 | flight data recorder / black box | бортовой самописец | |
 | laboratory / lab | лаборатория | |
 | assembling machine | сборочный автомат | официальный термин |
-| science pack | научный пакет | официальный термин |
+| science pack | исследовательский пакет | официальный термин |
 | rocket silo | ракетная шахта | официальный термин |
 | cargo bay | грузовой отсек | |
 | cargo / cargo container | груз / грузовой контейнер | |

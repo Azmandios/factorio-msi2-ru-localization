@@ -31,10 +31,12 @@ GLOSSARY_PATH = os.path.join(os.path.dirname(TOOLS_DIR), "docs", "glossary.json"
 # Белый список латинских токенов, которые разрешено оставлять в русском тексте.
 WHITELIST = {
     "MSI", "HP", "XP", "David", "Nauvis", "N/A", "Factorion", "Compilatron",
-    "CTRL", "LV", "Lv", "Sniper", "RPG", "ID", "MSI2",
+    "CTRL", "LV", "Lv", "Sniper", "RPG", "ID", "MSI2", "alt",
+    # Названия брендов/модов, оставляемые латиницей
+    "Space", "Exploration", "Mining", "Industries",
 }
 
-TAG_RE = re.compile(r"\[[a-z-]+=[^\]]+\]")
+TAG_RE = re.compile(r"\[/?[a-z-]+(?:=[^\]]+)?\]")
 PLACEHOLDER_RE = re.compile(r"__[A-Za-z0-9_]+__")
 LATIN_WORD_RE = re.compile(r"[A-Za-z][A-Za-z']+")
 
@@ -135,8 +137,8 @@ def main():
         if latin:
             errors.append(f"английские слова в переводе {sorted(set(latin))}: {full} ({ru_file})")
 
-        # совпадение с оригиналом (не переведено вообще)
-        if ru_val.strip() == en.strip():
+        # совпадение с оригиналом (не переведено вообще); числовые значения — исключение
+        if ru_val.strip() == en.strip() and re.search(r"[A-Za-zА-Яа-яЁё]", ru_val):
             warnings.append(f"перевод совпадает с оригиналом: {full} ({ru_file})")
 
         # длина: сильное расхождение — индикатор потерянного/лишнего абзаца
