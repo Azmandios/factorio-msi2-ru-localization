@@ -32,7 +32,12 @@ trap 'rm -rf "$T"' EXIT
 mkdir -p "$T/mods" "$T/write"
 
 for p in "$FACTORIO_MODS"/*; do
-  ln -s "$p" "$T/mods/$(basename "$p")"
+  base="$(basename "$p")"
+  # Пропускаем уже установленную копию нашего мода: распакуем свежую сборку ниже.
+  if [ "$base" = "${NAME}_${VERSION}" ] || [ "$base" = "$NAME" ]; then
+    continue
+  fi
+  ln -s "$p" "$T/mods/$base"
 done
 rm -f "$T/mods/mod-list.json"
 unzip -qo "$ARCHIVE" -d "$T/mods"

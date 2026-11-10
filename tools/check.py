@@ -110,6 +110,27 @@ def main():
             if name.endswith(".cfg"):
                 check_encoding_and_spacing(name, p, errors, warnings)
 
+    # --- дубли ключей между файлами перевода ---
+    seen = {}
+    if os.path.isdir(lu.RU_DIR):
+        for name in sorted(os.listdir(lu.RU_DIR)):
+            p = os.path.join(lu.RU_DIR, name)
+            if not name.endswith(".cfg"):
+                continue
+            for section, key, value in lu.parse_file(p):
+                full = f"{section}.{key}"
+                if full in seen:
+                    other_file, other_val = seen[full]
+                    if other_val == value:
+                        errors.append(
+                            f"дубликат ключа {full}: определён в {other_file} и {name}")
+                    else:
+                        errors.append(
+                            f"дубликат ключа {full} с разными значениями: "
+                            f"{other_file} и {name}")
+                else:
+                    seen[full] = (name, value)
+
     # --- содержимое по совпадающим ключам ---
     for k in sorted(src_keys & ru_keys):
         full = f"{k[0]}.{k[1]}"
