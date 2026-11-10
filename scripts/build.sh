@@ -17,7 +17,7 @@ ARCHIVE="$DIST/${NAME}_${VERSION}.zip"
 rm -rf "$STAGE" "$ARCHIVE"
 mkdir -p "$STAGE"
 
-for entry in info.json changelog.txt locale README.md; do
+for entry in info.json changelog.txt locale README.md LICENSE; do
   if [ ! -e "$ROOT/$entry" ]; then
     echo "Не найден обязательный элемент: $entry" >&2
     exit 1

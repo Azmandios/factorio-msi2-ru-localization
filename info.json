@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "title": "Mining Space Industries II — русская локализация",
   "description": "Русский перевод мода Mining Space Industries II и его обязательных зависимостей (factorio-crash-site, mferrari_lib, Rocket-Silo-Construction). Не изменяет оригинальные моды — только добавляет русские строки.",
-  "homepage": "",
+  "homepage": "https://github.com/Azmandios/factorio-msi2-ru-localization",
   "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.1",

@@ -67,4 +67,20 @@ Makefile                      check / report / build / install / smoke / clean
 
 ## Лицензия
 
-MIT (наши файлы локализации и инструментов). Оригинальный мод — собственность его автора.
+Наши файлы (инструменты, документация, русские строки) распространяются под
+[лицензией MIT](LICENSE). Русские строки — это перевод текстов оригинальных модов,
+которые остаются собственностью их авторов:
+
+- Mining Space Industries II — автор MFerrari;
+- factorio-crash-site, mferrari_lib, Rocket-Silo-Construction — их авторы.
+
+## English
+
+Russian localization for **Mining Space Industries II** and its required
+English-only dependencies: `factorio-crash-site`, `mferrari_lib`,
+`Rocket-Silo-Construction`. The mod adds only `locale/ru/*.cfg` overrides and loads
+after the original mods, replacing English strings with Russian. Requires Factorio
+2.1+ and Mining Space Industries II (auto-installed as a dependency).
+
+Published on the [Mod Portal](https://mods.factorio.com/mod/msi2-ru-localization).
+Source: https://github.com/Azmandios/factorio-msi2-ru-localization
