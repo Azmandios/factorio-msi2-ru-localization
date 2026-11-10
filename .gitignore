@@ -1,0 +1,24 @@
+# Сборка мода
+dist/
+*.zip
+
+# macOS
+.DS_Store
+
+# Логи Factorio
+factorio-current.log
+factorio-previous.log
+script-output/
+
+# Редакторы
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# Локальные инструменты AI-агента (ставятся заново через AI Factory)
+.opencode/
+.agents/

@@ -1,0 +1,60 @@
+# AI Factory Configuration
+# Проект: русская локализация модов Mining Space Industries II.
+
+language:
+  # Язык общения агента и промптов
+  ui: ru
+  # Язык генерируемых артефактов (планы, документация)
+  artifacts: ru
+  # Технические термины: keep | translate | mixed
+  technical_terms: mixed
+
+writing:
+  profile: none
+  targets: []
+  dictionary: ""
+
+paths:
+  description: .ai-factory/DESCRIPTION.md
+  architecture: .ai-factory/ARCHITECTURE.md
+  docs: docs/
+  roadmap: .ai-factory/ROADMAP.md
+  research: .ai-factory/RESEARCH.md
+  rules_file: .ai-factory/RULES.md
+  plan: .ai-factory/PLAN.md
+  plans: .ai-factory/plans/
+  fix_plan: .ai-factory/FIX_PLAN.md
+  security: .ai-factory/SECURITY.md
+  references: .ai-factory/references/
+  patches: .ai-factory/patches/
+  evolutions: .ai-factory/evolutions/
+  evolution: .ai-factory/evolution/
+  specs: .ai-factory/specs/
+  rules: .ai-factory/rules/
+  qa: .ai-factory/qa/
+  archive: .ai-factory/archive/
+
+warmup:
+  paths: []
+
+workflow:
+  explore_mode: regular
+  plan_mode: ask
+  improve_check: false
+  auto_create_dirs: true
+  plan_id_format: slug
+  analyze_updates_architecture: true
+  architecture_updates_roadmap: true
+  verify_mode: normal
+
+git:
+  # Репозиторий инициализируется первой задачей плана.
+  enabled: true
+  base_branch: main
+  # Пока работаем прямо в main: перевод — линейная работа без параллельных веток.
+  create_branches: false
+  branch_prefix: feature/
+  skip_push_after_commit: false
+
+rules:
+  base: .ai-factory/rules/base.md

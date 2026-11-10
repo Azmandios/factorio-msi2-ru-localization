@@ -1,0 +1,42 @@
+{
+  "mods": {
+    "Mining-Space-Industries-II": {
+      "version": "1.0.4",
+      "sha256": "72d9275b4037280e139320e3e79882478fa22e7fcba0a0a625d28f7c9c2afa86",
+      "source_zip": "Mining-Space-Industries-II_1.0.4.zip",
+      "locale_files": [
+        "Mining-Space-Industries-II/locale/en/en.cfg"
+      ],
+      "key_count": 377
+    },
+    "factorio-crash-site": {
+      "version": "2.1.0",
+      "sha256": "93e67eca408017bfb36afed28b1c99e50c1ba0677bc15d73b82c9cd5fadd95b3",
+      "source_zip": "factorio-crash-site_2.1.0.zip",
+      "locale_files": [
+        "factorio-crash-site_2.1.0/locale/en/base.cfg"
+      ],
+      "key_count": 28
+    },
+    "mferrari_lib": {
+      "version": "0.7.8",
+      "sha256": "a961579b562c97ff85d0c71270c5bdae2d7264057f7c68e9495b033cd7994a38",
+      "source_zip": "mferrari_lib_0.7.8.zip",
+      "locale_files": [
+        "mferrari_lib/locale/en/config.cfg"
+      ],
+      "key_count": 44
+    },
+    "Rocket-Silo-Construction": {
+      "version": "2.1.3",
+      "sha256": "a433066c58339f467fae867c131b386616c0ab42c757f509a3c6b541329a6669",
+      "source_zip": "Rocket-Silo-Construction_2.1.3.zip",
+      "locale_files": [
+        "Rocket-Silo-Construction/locale/en/en.cfg"
+      ],
+      "key_count": 44
+    }
+  },
+  "generated_at": "2026-11-10T20:36:38.044961+00:00",
+  "source_dir": "/Users/user/Library/Application Support/factorio/mods"
+}

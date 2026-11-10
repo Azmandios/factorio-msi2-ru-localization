@@ -1,0 +1,27 @@
+{
+  "terms": [
+    {"en": "protomolecule", "ru": "протомолекула", "forbidden": ["протомолекул", "протомолекулa", "прото-молекула"]},
+    {"en": "companion droid", "ru": "дрон-компаньон", "forbidden": ["компаньон-дроид", "дроид-компаньон"]},
+    {"en": "worker droid", "ru": "рабочий дрон", "forbidden": ["рабочий дроид", "дроид-рабочий"]},
+    {"en": "science pack", "ru": "научный пакет", "forbidden": ["сайенс", "саенс", "наука-пак"]},
+    {"en": "assembling machine", "ru": "сборочный автомат", "forbidden": ["ассемблер", "сборщик"]},
+    {"en": "rocket silo", "ru": "ракетная шахта", "forbidden": ["ракетный силос"]},
+    {"en": "message board", "ru": "доска сообщений", "forbidden": ["доска объявлений"]},
+    {"en": "mission control", "ru": "контроль миссии", "forbidden": ["управление миссией"]},
+    {"en": "biter", "ru": "кусака", "forbidden": ["байтер", "кусачка"]},
+    {"en": "spitter", "ru": "плевака", "forbidden": ["спиттер", "плеватель"]},
+    {"en": "nest", "ru": "гнездо", "forbidden": []},
+    {"en": "worm", "ru": "червь", "forbidden": ["ворм"]},
+    {"en": "boss", "ru": "босс", "forbidden": []},
+    {"en": "zombie", "ru": "зомби", "forbidden": []},
+    {"en": "cyborg", "ru": "киборг", "forbidden": []},
+    {"en": "satellite", "ru": "спутник", "forbidden": ["сателлит"]},
+    {"en": "turret", "ru": "турель", "forbidden": []},
+    {"en": "artillery", "ru": "артиллерия", "forbidden": []},
+    {"en": "sniper rifle", "ru": "снайперская винтовка", "forbidden": ["снайперка"]},
+    {"en": "oil patch", "ru": "нефтяное месторождение", "forbidden": ["нефтяное пятно"]},
+    {"en": "wreckage", "ru": "обломки", "forbidden": ["реки", "обломок корабля"]},
+    {"en": "escape pod", "ru": "спасательная капсула", "forbidden": ["спасательный модуль"]},
+    {"en": "productivity", "ru": "производительность", "forbidden": ["продуктивность"]}
+  ]
+}
