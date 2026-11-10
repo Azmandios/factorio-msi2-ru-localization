@@ -78,3 +78,4 @@ echo
 echo "Публикация:"
 echo "  git push origin main"
 echo "  git push origin --tags"
+echo "  make publish        # загрузить zip на Mod Portal"

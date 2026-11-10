@@ -22,3 +22,8 @@ __pycache__/
 # Локальные инструменты AI-агента (ставятся заново через AI Factory)
 .opencode/
 .agents/
+
+# Секреты (токены API)
+.mod-portal-token
+.env
+.env.*

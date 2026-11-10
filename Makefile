@@ -3,7 +3,7 @@ MOD_VERSION := $(shell python3 -c 'import json; print(json.load(open("info.json"
 FACTORIO_MODS ?= $(HOME)/Library/Application Support/factorio/mods
 FACTORIO_BIN ?= $(HOME)/Library/Application Support/Steam/steamapps/common/Factorio/factorio.app/Contents/MacOS/factorio
 
-.PHONY: check report build install smoke sync-source release clean
+.PHONY: check report build install smoke sync-source release publish clean
 
 check:
 	@python3 tools/check.py
@@ -26,6 +26,10 @@ sync-source:
 # Пример: make release BUMP=patch CHANGES="Исправить термин"
 release:
 	@bash scripts/release.sh "$(BUMP)" "$(CHANGES)"
+
+# Публикация собранного релиза на Mod Portal (токен: MOD_PORTAL_TOKEN или .mod-portal-token).
+publish:
+	@bash scripts/publish.sh
 
 smoke:
 	@FACTORIO_BIN="$(FACTORIO_BIN)" FACTORIO_MODS="$(FACTORIO_MODS)" bash scripts/smoke.sh
