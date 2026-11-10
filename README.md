@@ -46,6 +46,7 @@ make install FACTORIO_MODS="/path/to/factorio/mods"
 - `make smoke` — headless-прогон Factorio и проверка, что названия прототипов реально стали русскими.
 
 Подробнее об обновлении после выхода новой версии MSI2 — в `docs/updating.md`.
+Модель релиза, версионирование (semver) и теги — в `docs/release.md`.
 
 ## Структура
 
