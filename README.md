@@ -74,6 +74,8 @@ Makefile                      check / report / build / install / smoke / clean
 - Mining Space Industries II — автор MFerrari;
 - factorio-crash-site, mferrari_lib, Rocket-Silo-Construction — их авторы.
 
+Перевод опубликован с согласия автора MFerrari.
+
 ## English
 
 Russian localization for **Mining Space Industries II** and its required
@@ -82,5 +84,6 @@ English-only dependencies: `factorio-crash-site`, `mferrari_lib`,
 after the original mods, replacing English strings with Russian. Requires Factorio
 2.1+ and Mining Space Industries II (auto-installed as a dependency).
 
-Published on the [Mod Portal](https://mods.factorio.com/mod/msi2-ru-localization).
+Published on the [Mod Portal](https://mods.factorio.com/mod/msi2-ru-localization)
+with the original author's (MFerrari) permission.
 Source: https://github.com/Azmandios/factorio-msi2-ru-localization
